@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Duck.cs" />
-    <Compile Include="DuckToGooseAdapter.cs" />
+    <Compile Include="GooseToDuckAdapter.cs" />
     <Compile Include="Goose.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

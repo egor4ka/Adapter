@@ -11,7 +11,7 @@ namespace Adapter
             Duck wildDuck = new WildDuck();
 
             Goose goose = new Goose();
-            Duck gooseAdapter = new DuckToGooseAdapter(goose);
+            Duck gooseAdapter = new GooseToDuckAdapter(goose);
 
             Console.WriteLine("Резиновая уточка:");
             rubberDuck.Quack();

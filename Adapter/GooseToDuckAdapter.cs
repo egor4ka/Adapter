@@ -1,10 +1,10 @@
 ﻿namespace Adapter
 {
-    public class DuckToGooseAdapter : Duck
+    public class GooseToDuckAdapter : Duck
     {
         private readonly Goose _goose;
 
-        public DuckToGooseAdapter(Goose goose)
+        public GooseToDuckAdapter(Goose goose)
         {
             _goose = goose;
         }
