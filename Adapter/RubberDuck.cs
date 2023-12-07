@@ -6,11 +6,11 @@ namespace Adapter
     {
         public override void Fly()
         {
-            Console.WriteLine("Уточка летает");
+            Console.WriteLine("Уточка не летает");
         }
         public override void Quack()
         {
-            Console.WriteLine("Резиновая утка крякает");
+            Console.WriteLine("Резиновая утка не крякает");
         }
     }
 }

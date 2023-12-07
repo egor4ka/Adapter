@@ -13,24 +13,21 @@ namespace Adapter
             Turkey turkey = new Turkey();
             ducks.Add(turkey);
 
-            Duck wildDuck = new WildDuck();
-
-            Goose goose = new Goose();
-            Duck gooseAdapter = new DuckToGooseAdapter(goose);
-
-            Console.WriteLine("Резиновая уточка:");
-            rubberDuck.Quack();
-            rubberDuck.Fly();
-
-            Console.WriteLine("\nГусь-адапетр:");
-            gooseAdapter.Quack();
-            gooseAdapter.Fly();
-
-            Console.WriteLine("\nДикая утка:");
-            wildDuck.Quack();
-            wildDuck.Fly();
-
-            Console.ReadLine();
+            foreach (var duck in ducks)
+            {
+                if (duck is Turkey)
+                {
+                    Duck Adapter = new Adapter(turkey);
+                    Adapter.Quack();
+                    Adapter.Fly();
+                }
+                else
+                {
+                    duck.Quack();
+                    duck.Fly();
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
