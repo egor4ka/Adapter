@@ -1,16 +1,8 @@
-﻿using System;
-
-namespace Adapter
+﻿namespace Adapter
 {
     public abstract class Duck
     {
-        public virtual void Fly()
-        {
-            Console.WriteLine("Утка летит");
-        }
-        public virtual void Quack()
-        {
-            Console.WriteLine("Утка крякает");
-        }
+        public abstract void Quack();
+        public abstract void Fly();
     }
 }
