@@ -2,15 +2,15 @@
 
 namespace Adapter
 {
-    public class Goose
+    public class Turkey : Duck
     {
-        public void Cackling()
-        {
-            Console.WriteLine("Гусь гогочет");
-        }
         public void Fly()
         {
-            Console.WriteLine("Гусь летает");
+            Console.WriteLine("Индюк летит");
+        }
+        public void Gobble()
+        {
+            Console.WriteLine("Индюк гогочет");
         }
     }
 }
